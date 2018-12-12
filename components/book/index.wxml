@@ -1,0 +1,10 @@
+<view bind:tap="onTap" class="container">
+  <image  src="{{book.image||book.img}}"></image>
+  <view class="description">
+    <text class='title'>{{book.title}}</text>
+    <text class='author'>{{book.author}}</text>
+    <view wx:if="{{showLike}}" class='foot'>
+      <text class="footer">豆瓣评分 <text class="score">{{book.mark}}</text></text> 
+    </view>
+  </view>
+</view>
