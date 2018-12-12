@@ -1,0 +1,12 @@
+<template name="listBottom">
+  <view>
+    <view wx:if="{{hasMore == 1}}" style="display: flex;flex-direction: row;align-items: center;justify-content: center; padding:20rpx;">
+      <text class="bottomText">正在加载中...</text>
+    </view>
+    <view wx:elif="{{hasMore == 0}}">
+    </view>
+    <view wx:else style="text-align: center; height:56rpx;display: flex;align-items: center;justify-content: center; padding:20rpx">
+      <text class="bottomText">没有更多了...</text>
+    </view>
+  </view>
+</template>

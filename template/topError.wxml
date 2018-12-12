@@ -1,0 +1,9 @@
+<template name="topError">
+  <block wx:if="{{isError}}">
+    <view class="error-head">{{errMsg}}</view>
+  </block>
+</template>
+
+<!--
+    顶部错误信息提示
+-->

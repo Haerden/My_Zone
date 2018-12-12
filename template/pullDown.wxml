@@ -1,0 +1,25 @@
+<template name="pullDown">
+  <view class="pulldown-head">
+    <view wx:for="{{pullDownData}}" wx:key="" class="pulldown-head-item" data-index="{{index}}" data-item="{{item}}" bindtap="onPressPullDownHeadItem">
+      <text>{{item.name}}</text>
+      <view wx:if="{{item.changeCount > 0}}" class="pulldown-head-item-count">
+        {{item.changeCount}}
+      </view>
+      <view wx:elif="{{item.callback}}"></view>
+      <view wx:else class="pulldown-head-item-icon">
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--
+    顶部下拉遮罩
+    pullDownData: [{
+        name: '选项2', 
+        changeCount: 10,
+        callback: ''
+    }]
+    - pullDownData 页面传过来的对象数组
+    - changeCount 大于0时，名称旁边显示个数
+    - callback 回调函数。点击该按钮不再弹出下拉遮罩，已弹出的也会被收起来。
+-->

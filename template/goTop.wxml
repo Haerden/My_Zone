@@ -1,0 +1,5 @@
+<template name="goTop">
+  <view style="position: fixed;right: 80rpx; bottom: 120rpx; " wx:if="{{isShow}}" bindtap="onGoTop">
+    <image  class="goTopImage" src="/images/top.png"></image>
+  </view>
+</template>
