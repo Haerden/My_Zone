@@ -1,0 +1,59 @@
+
+<view class="container1">
+  <view class="head">
+    <image src="{{book.image}}"></image>
+    <text class='title'>{{book.title}}</text>
+    <text class='author'>{{book.author}}</text>
+  </view>
+
+  <view class="sub-container">
+    <text class="headline">豆瓣评分</text>
+    <view class="sub-mark">
+      <text class="shadow" >{{book.mark}}</text>
+    </view>
+  </view>
+
+  <view class="sub-container">
+    <text class="headline">内容简介</text>
+     <text decode="{{true}}" class="content">{{(book.summary)}}       </text>
+  </view>
+  <view class="sub-container">
+    <text class="headline">书本信息</text>
+    <view class="detail-contaner">
+      <view class="vertical">
+        <text class="description">出版社</text>
+        <text class="description">出版年</text>
+        <text class="description">页数</text>
+        <text class="description">定价</text>
+        <text class="description">装帧</text>
+      </view>
+      <view class="vertical">
+        <text class="">{{book.publisher}}</text>
+        <text class="">{{book.pubdate}}</text>
+        <text class="">{{book.pages}}</text>
+        <text class="">{{book.price}}</text>
+        <text class="">{{book.binding}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+ 
+
+<wxs module="util">
+  var limit = function(array, length) {
+    return array.slice(0, length)
+  }
+  var format = function(text){
+    if(!text){
+      return
+    }
+    var reg = getRegExp('\\\\n','g')
+    var text = text.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+    return text
+  }
+  module.exports = {
+    limit: limit,
+    format:format
+  }
+</wxs>

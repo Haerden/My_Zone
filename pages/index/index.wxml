@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<import src="/template/pullDown" />
+<import src="/template/listBottom" />
+<import src="/template/goTop" />
+<view class="container">
+  <scroll-view style="height: 800px;"  scroll-y="true" bindscrolltoupper="refresh" bindscrolltolower="onScrollToLower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+    <i-steps direction="vertical">
+      <view class='cell'wx:for="{{list}}" wx:key='key'>
+          <i-step icon="barrage">
+              <view slot="title">
+                <text class="date">
+                  {{item[0]}}
+                </text>
+                <text class='title'>
+                  {{item[1]}}
+                </text>
+                
+              </view>
+              <view slot="content">
+                <text class='summary'>
+                  {{item[2]}}
+                </text>
+                <text class='source'>
+                  来源：{{item[4]}}
+                </text>  
+              </view>
+          </i-step>
+  
+      </view>
+    </i-steps>
+      <template is="listBottom" data="{{hasMore}}" />
+  </scroll-view>
+</view>
+<template is="goTop" data="{{isShow}}" />

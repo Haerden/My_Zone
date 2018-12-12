@@ -1,0 +1,14 @@
+<view>
+  <view class="sub-container">
+    <view class="maintitle">
+      <text>
+       书单精选
+      </text>
+    </view>
+    <view class="books-container">
+      <block wx:for="{{books}}" wx:key="key">
+        <book-cmp book="{{item}}" class="book" />
+      </block>
+    </view>
+  </view>
+</view>

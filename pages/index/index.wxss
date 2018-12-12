@@ -1,0 +1,37 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+} 
+
+ .cell{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f5f5f5; */
+  margin-top:20rpx;
+  padding: 10rpx;
+} 
+.title {
+  color:chocolate;
+  font-size: 32rpx;
+}
+.summary {
+  color:#333;
+  font-size: 26rpx;
+  line-height: 49rpx;
+}
+.source{
+  color:#999;
+  font-size: 21rpx;
+}
+.date{
+  color: #999;
+  font-size: 28rpx;
+}
+.col-class{
+  color: #ee735c;
+}

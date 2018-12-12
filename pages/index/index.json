@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-steps": "../../dist/steps/index",
+    "i-step": "../../dist/step/index",
+    "i-load-more":"../../dist/load-more/index"
+    
+  }
+
+}

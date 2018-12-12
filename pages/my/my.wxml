@@ -1,0 +1,55 @@
+<view class="contain">
+<view class="maintitle">
+<text class="">
+  历次熊市底部上证指数对比</text>
+</view>
+  <i-panel title="2005年6月6日"  class="pan">
+    <view style="padding: 12px;">998点</view>
+  </i-panel>
+  <i-panel title="2008年10月25日">
+    <view style="padding: 12px;">1664点</view>
+  </i-panel>
+  <i-panel title="2013年6月25日">
+    <view style="padding: 12px;">1849点</view>
+  </i-panel>
+    <i-panel title="2018年8月20日">
+    <view style="padding: 12px;">2653点</view>
+  </i-panel>
+
+<view class="maintitleOther"><text>底部市盈率中位数对比</text></view>
+  <i-panel title="2005年6月6日PE">
+    <view style="padding: 12px;">20.2倍</view>
+  </i-panel>
+  <i-panel title="2008年10月25日PE" >
+    <view style="padding: 12px;">17.4倍</view>
+  </i-panel>
+  <i-panel title="2013年6月25日PE">
+    <view style="padding: 12px;">27.8倍</view>
+  </i-panel>
+    <i-panel title="2018年8月20日PE">
+    <view style="padding: 12px;">28.3倍</view>
+  </i-panel>
+  <view class='last'>
+  <text>
+    PE中位数随着小盘股占比越来越高，PE中位数也水涨船高。现在的PE中位数和08年，内涵已经差了很多。  
+  </text>
+  </view>
+<view class="maintitleOther"><text class="maintext">底部市净率中位数对比</text></view>
+  <i-panel title="2005年6月6日PB" style="">
+    <view style="padding: 12px;">1.55倍</view>
+  </i-panel>
+  <i-panel title="2008年10月25日PB">
+    <view style="padding: 12px;">1.77倍</view>
+  </i-panel>
+  <i-panel title="2013年6月25日PB">
+    <view style="padding: 12px;">2.16倍</view>
+  </i-panel>
+    <i-panel title="2018年8月20日PB">
+    <view style="padding: 12px;">2.30倍</view>
+  </i-panel>
+  <view class='last'>
+   <text>
+    PB中位数可认为是市场整体的估值水平，与前几次熊市底部区域相比基本可以确定，部分个股在本次调整后，已具备中长期投资价值。但鉴于目前流动性整体不足，预计后市分化格局将继续。​​​​
+  </text>
+  </view>
+</view>
